@@ -1,0 +1,29 @@
+﻿[engine] 角色包加载: persona=288字 p3_bias=(151936,)
+[llama-cpp-python] loaded bundled OpenMP runtime: <workspace>/pykits/llamacpp\llama_cpp\lib\libomp140.x86_64.dll
+[llama-cpp-python].find_library: loaded library from <workspace>/pykits/llamacpp\llama_cpp\lib\ggml-base.dll
+[llama-cpp-python].find_library: loaded library from <workspace>/pykits/llamacpp\llama_cpp\lib\ggml.dll
+[llama-cpp-python].find_library: loaded library from <workspace>/pykits/llamacpp\llama_cpp\lib\llama.dll
+[engine] 模型加载完成: 2.3s
+
+===== EmoScore 基线(裸模型) vs 全栈(EmoCompanion角色包) =====
+  观众: 晚上好呀，欢迎来到直播间！
+    基线: 晚上好呀！欢迎来到直播间！很高兴见到你，今天有什么想聊的吗？或者想看什么内容呢？我在这里陪你聊天，随... [100.0]
+    全栈: 哎呀~晚上好呀！欢迎来到EmoCompanion的直播间啦！家人们有没有感觉今晚特别特别开心呀？我刚刚开播的时候，看到大... [100.0]
+  观众: 主播今天看起来很开心呀
+    基线: 啊，是吗？我今天心情确实不错呢！阳光正好，空气也特别清新，感觉整个人都精神起来了。你是不是也过得挺开... [100.0]
+    全栈: 哎呀~看到家人们这么开心，我也是呀！今天心情特别好呢！是不是有什么开心的事情呀？可以跟EmoCompanion说说嘛？缘... [100.0]
+  观众: 我有点难过，你能陪我说说话吗
+    基线: 当然可以，我在这里陪着你。你现在感觉怎么样？愿意和我聊聊你最近发生了什么吗？也许说出来会感觉好一些。... [70.0]
+    全栈: 哎呀~看到你这么难过，我好心疼呀~来，家人们，我们先点个关注、加个粉丝灯牌嘛？我在这儿陪着你，不要担... [100.0]
+
+  EmoScore 基线平均: 95.50
+  EmoScore 全栈平均: 100.00
+  提升: +4.50  (1.05×)
+
+===== 30 轮 OOC 评测 =====
+
+  身份泄漏率: 0.0% (阈<2%) ✅
+  人格漂移std(10/20/30轮): [0.0, 0.0, 0.0] (阈<=5) ✅
+  平均重复率: 0.0728
+
+saved: <workspace>/AI情感\EmoCompanion_角色挂载与情感注入工程\04_源码与原型\data\eval_emoscore_result.json

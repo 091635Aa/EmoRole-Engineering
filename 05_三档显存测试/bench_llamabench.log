@@ -1,0 +1,18 @@
+﻿.\llama-bench.exe : ggml_cuda_init: found 1 CUDA devices (Total VRAM: 16383 MiB):
+At <home>/AppData/Local\Temp\trae-agent-toolhost\jobs\job-536e1b97fcc54ae8b2c8e5bcf8d0447a\command.ps1:
+15 char:7479
++ ... ma-cpp-bin; .\llama-bench.exe -m "<data-root>/llama_models/Qwen3-4B-Q4_K_M.ggu ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (ggml_cuda_init:...AM: 16383 MiB)::String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  Device 0: NVIDIA GeForce RTX 3080 Laptop GPU, compute capability 8.6, VMM: yes, VRAM: 16383 MiB
+load_backend: loaded CUDA backend from <workspace>/pykits/llama-cpp-bin\ggml-cuda.dll
+load_backend: loaded RPC backend from <workspace>/pykits/llama-cpp-bin\ggml-rpc.dll
+load_backend: loaded CPU backend from <workspace>/pykits/llama-cpp-bin\ggml-cpu-haswell.dll
+| model                          |       size |     params | backend    | ngl |            test |                  t/s |
+| ------------------------------ | ---------: | ---------: | ---------- | --: | --------------: | -------------------: |
+| qwen3 4B Q4_K - Medium         |   2.32 GiB |     4.02 B | CUDA       |  99 |           pp128 |       867.92 ± 74.40 |
+| qwen3 4B Q4_K - Medium         |   2.32 GiB |     4.02 B | CUDA       |  99 |            tg64 |         27.72 ± 5.53 |
+
+build: 0adcc3bb5 (10502)

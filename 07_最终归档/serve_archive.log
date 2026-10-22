@@ -1,0 +1,21 @@
+﻿python : INFO:     Started server process [19348]
+At <home>/AppData/Local\Temp\trae-agent-toolhost\jobs\job-6b6a04af12fb4aa181dd4519f77aeb96\command.ps1:
+15 char:7298
++ ... pgrep\bin'; python app.py --serve --port 8000 --model Qwen3-4B-Q4_K_M ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (INFO:     Started server process [19348]:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+[engine] 角色包加载: persona=288字 p3_bias=(151936,)
+[llama-cpp-python].find_library: loaded library from <workspace>/pykits/llamacpp\llama_cpp\lib\ggml-base.dll
+[llama-cpp-python].find_library: loaded library from <workspace>/pykits/llamacpp\llama_cpp\lib\ggml.dll
+[llama-cpp-python].find_library: loaded library from <workspace>/pykits/llamacpp\llama_cpp\lib\llama.dll
+[engine] 模型加载完成: 2.9s
+[cli] 定向模型: Qwen3-4B-Q4_K_M（当前进程引擎为 Qwen3-4B-Q4_K_M）
+[server] 可用角色: ['default']
+[cli] 启动服务 http://127.0.0.1:8000 (model=Qwen3-4B-Q4_K_M, pack=default)
+INFO:     127.0.0.1:11560 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:11560 - "POST /chat HTTP/1.1" 200 OK

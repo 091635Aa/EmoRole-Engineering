@@ -1,0 +1,22 @@
+{
+  "emoscore": {
+    "baseline_avg": 95.0,
+    "fullstack_avg": 100.0,
+    "ratio": 1.05,
+    "delta": 5.0
+  },
+  "ooc": {
+    "n_turns": 10,
+    "leak_rate": 0.0,
+    "drift_std_w10_20_30": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "avg_rep2": 0.1224
+  },
+  "thresholds": {
+    "leak_rate<2%": true,
+    "drift<=5": true
+  }
+}
