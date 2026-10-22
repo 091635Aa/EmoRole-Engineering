@@ -1,0 +1,57 @@
+# 模型权重（本仓不收录任何权重）
+*.pt
+*.pth
+*.safetensors
+*.bin
+*.gguf
+*.onnx
+*.ckpt
+*.npz
+*.npy
+*.pkl
+*.h5
+*.model
+
+# 音视频与压缩包（本仓不收录）
+*.wav
+*.mp3
+*.flac
+*.m4a
+*.ogg
+*.mp4
+*.mov
+*.avi
+*.zip
+*.7z
+*.rar
+*.tar
+*.gz
+
+# 虚拟环境与缓存
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+
+# 运行时产物 / 凭据
+out/
+dist/
+build/
+*.db
+*.crt
+*.key
+*.pem
+证书/
+.env
+
+# 训练数据（原始训练集与 TTS 代码数据不随仓分发，见 README 第五节）
+02_角色参数与数据/微调数据/*.jsonl
+06_Qwen3TTS外挂/data/
+
+# 系统文件
+.DS_Store
+Thumbs.db
+desktop.ini
